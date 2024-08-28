@@ -3,7 +3,7 @@
 ### NodeInfo
 ```
 const fedi_wk = require('fedi-well-known');
-const nodeInfo = fedi_wk.fetchNodeInfo('mastodon.social');
+const nodeInfo = await fedi_wk.fetchNodeInfo('mastodon.social');
 const mastodonActiveUsers = res.data.usage.users.activeMonth;
 console.log(nodeInfo);
 ```
