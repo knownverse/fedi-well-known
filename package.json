@@ -6,9 +6,10 @@
     "test": "npx jest",
     "start": "node src/index.js"
   },
+  "repository": "https://github.com/knownverse/fedi-well-known",
   "author": "",
   "license": "MIT",
-  "description": "",
+  "description": "Fetch typical Fediverse paths",
   "devDependencies": {
     "jest": "^29.7.0",
     "jest-fetch-mock": "^3.0.3"
