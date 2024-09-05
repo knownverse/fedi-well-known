@@ -23,7 +23,7 @@ async function fetchJSON(url){
         const data = await response.json();
         return WellKnowResult.Success(data);
     } catch (err) {
-        return WellKnowResult.Error(`Error fetching url ${url}: ${err.message}`);
+	return WellKnowResult.Error(`Error fetching url ${url}: ${err.cause || err.message}. Stack: \n ${err.stack}`);
     }
 }
 
