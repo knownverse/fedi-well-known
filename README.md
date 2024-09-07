@@ -1,4 +1,7 @@
-## Fetching Fediverse server typical requests
+# Fetching Fediverse server typical requests
+
+[![npm](https://img.shields.io/npm/v/fedi-well-known.svg)](https://www.npmjs.com/package/fedi-well-known)
+
 
 ### NodeInfo
 ```js
