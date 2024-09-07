@@ -1,6 +1,6 @@
-const { WellKnowResult, fetchNodeInfo, fetchJSON, fetchWellKnown, fetchWellKnownLinks } = require('./index.js');
-// const fetch = require('jest-fetch-mock');
-require('jest-fetch-mock').enableMocks()
+import fetchMock from 'jest-fetch-mock'
+fetchMock.enableFetchMocks()
+import { WellKnowResult, fetchNodeInfo, fetchJSON, fetchWellKnown, fetchWellKnownLinks } from './index.js';
 
 describe('WellKnowResult', () => {
     it('should create a successful result', () => {

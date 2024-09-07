@@ -38,7 +38,7 @@ async function fetchWellKnownLinks(domain, uriSuffix, relFilter){
     const {links} = wellKnowResult.data;
     if (!links)
         return WellKnowResult.Error('No links in expected well-known response');
-    linksMap = new Map();
+    let linksMap = new Map();
     links.forEach(link => {
         if (!relFilter || link==relFilter){
             linksMap.set(link.rel, link.href);
@@ -56,4 +56,4 @@ async function fetchNodeInfo(domain, relFilter = null) {
     return await fetchJSON(firstUrl);
 }
 
-module.exports = {WellKnowResult, fetchNodeInfo, fetchJSON, fetchWellKnown, fetchWellKnownLinks}
+export {WellKnowResult, fetchNodeInfo, fetchJSON, fetchWellKnown, fetchWellKnownLinks}

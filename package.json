@@ -1,9 +1,10 @@
 {
   "name": "fedi-well-known",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "npx jest",
+    "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" npx jest",
     "start": "node src/index.js"
   },
   "repository": "https://github.com/knownverse/fedi-well-known",
