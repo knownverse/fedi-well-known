@@ -4,6 +4,7 @@
 [![npm](https://github.com/knownverse/fedi-well-known/actions/workflows/node.js.yml/badge.svg)](https://github.com/knownverse/fedi-well-known/actions)
 [![npm](https://codecov.io/gh/knownverse/fedi-well-known/branch/master/graph/badge.svg)](https://codecov.io/gh/knownverse/fedi-well-known)
 
+[JavaScript examples](https://github.com/knownverse/fedi-well-known/tree/master/examples/js) | [TypeScript examples](https://github.com/knownverse/fedi-well-known/tree/master/examples/ts)
 
 ### NodeInfo
 ```js
