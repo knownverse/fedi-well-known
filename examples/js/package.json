@@ -1,0 +1,15 @@
+{
+  "name": "e2e_examples",
+  "version": "1.0.0",
+  "main": "fetchMastodonNodeinfo.js",
+  "type": "module",
+  "scripts": {
+    "nodeinfo": "node fetchMastodonNodeInfo"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "fedi-well-known": "^0.3.0"
+  }
+}

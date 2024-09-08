@@ -12,7 +12,10 @@
     "start": "tsc && node dist/index.js",
     "build": "tsc"
   },
-  "repository": "https://github.com/knownverse/fedi-well-known",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knownverse/fedi-well-known.git"
+  },
   "jest": {
     "transform": {
       ".(ts|tsx)": "ts-jest"

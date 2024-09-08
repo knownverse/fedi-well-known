@@ -1,0 +1,16 @@
+{
+  "name": "e2e_ts_examples",
+  "version": "1.0.0",
+  "main": "fetchMastodonNodeInfo.ts",
+  "type": "module",
+  "scripts": {
+    "nodeinfo": "tsx fetchMastodonNodeInfo.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "fedi-well-known": "^0.3.0",
+    "tsx": "^4.19.0"
+  }
+}
