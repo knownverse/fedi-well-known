@@ -15,8 +15,9 @@ const mastodonActiveUsers = nodeInfo.data.usage.users.activeMonth;
 console.log(JSON.stringify(nodeInfo.data, null, 2));
 ```
 
-output example:
-```json
+<details>
+<summary>output</summary>
+<code>
 {
   "version": "2.0",
   "software": {
@@ -44,4 +45,5 @@ output example:
     "nodeDescription": "The original server operated by the Mastodon gGmbH non-profit"
   }
 }
-```
+</code>
+</details>
