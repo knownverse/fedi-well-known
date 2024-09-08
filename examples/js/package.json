@@ -10,6 +10,6 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "fedi-well-known": "^0.3.0"
+    "fedi-well-known": "^0.4.0"
   }
 }
