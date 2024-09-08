@@ -2,3 +2,5 @@ node_modules
 dist
 coverage
 *.tsbuildinfo
+examples/ts/package-lock.json
+examples/js/package-lock.json
