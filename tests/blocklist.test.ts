@@ -1,6 +1,6 @@
 import fetch, {enableFetchMocks} from 'jest-fetch-mock'
 enableFetchMocks()
-import {fetchBlocklist} from '../src/blocklists';
+import {fetchBlockList} from '../src/blocklists';
 
 describe('fetchBlocklist', () => {
     beforeEach(() => {
@@ -13,7 +13,7 @@ describe('fetchBlocklist', () => {
         
         fetch.mockResponseOnce(JSON.stringify(data));
 
-        const result = await fetchBlocklist(domain);
+        const result = await fetchBlockList(domain);
 
         expect(result.success).toBe(true);
         expect(fetch).toHaveBeenCalledWith(`https://${domain}/api/v1/instance/domain_blocks`);
@@ -23,7 +23,7 @@ describe('fetchBlocklist', () => {
         const domain = 'example.com';
         fetchMock.mockReject(new Error('Fetch failed'));
 
-        const result = await fetchBlocklist(domain);
+        const result = await fetchBlockList(domain);
 
         expect(result.success).toBe(false);
         expect(result.error).toMatch(/Error fetching url https:\/\/example.com\/api\/v1\/instance\/domain_blocks:/);

@@ -1,5 +1,5 @@
-import {fetchBlocklist} from 'fedi-well-known'
-const resp = await fetchBlocklist('mastodon.social');
+import {fetchBlockList} from 'fedi-well-known'
+const resp = await fetchBlockList('mastodon.social');
 if (resp.success)
 {
     const blocklist = resp.data;
