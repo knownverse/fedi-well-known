@@ -1,13 +1,13 @@
 {
   "name": "fedi-well-known",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "type": "module",
   "scripts": {
-    "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
+    "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'tests/**/*.ts'",
     "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" npx jest",
     "start": "tsc && node dist/index.js",
     "build": "tsc"
