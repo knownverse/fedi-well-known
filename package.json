@@ -1,6 +1,6 @@
 {
   "name": "fedi-well-known",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -8,10 +8,10 @@
   "type": "module",
   "scripts": {
     "build": "npm run clean && tsc",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist && rm -f tsconfig.tsbuildinfo",
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'tests/**/*.ts'",
     "prepublish": "npm run build",
-    "publish": "npm run prepublish && npm run publish",
+    "publish": "npm publish",
     "start": "npm run clean && tsc && node dist/index.js",
     "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" npx jest"
   },
