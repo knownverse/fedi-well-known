@@ -7,10 +7,11 @@
   ],
   "type": "module",
   "scripts": {
+    "clean": "rm -rf dist",
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'tests/**/*.ts'",
     "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" npx jest",
-    "start": "tsc && node dist/index.js",
-    "build": "tsc"
+    "start": "npm run clean && tsc && node dist/index.js",
+    "build": "npm run clean && tsc"
   },
   "repository": {
     "type": "git",
