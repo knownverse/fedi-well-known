@@ -1,6 +1,6 @@
-import fetchMock from 'jest-fetch-mock'
-fetchMock.enableFetchMocks()
-import { WellKnowResult, fetchNodeInfo, fetchJSON, fetchWellKnown, fetchWellKnownLinks } from './index.js';
+import fetch, {enableFetchMocks} from 'jest-fetch-mock'
+enableFetchMocks()
+import { WellKnowResult, fetchNodeInfo, fetchJSON, fetchWellKnown, fetchWellKnownLinks } from '../src/index';
 
 describe('WellKnowResult', () => {
     it('should create a successful result', () => {
@@ -31,7 +31,6 @@ describe('fetchJSON', () => {
         fetch.mockResponseOnce(JSON.stringify(data), { status: 200 });
 
         const result = await fetchJSON(url);
-        console.log(result);
         expect(result.success).toBe(true);
         expect(result.data).toEqual(data);
         expect(result.error).toBeNull();
