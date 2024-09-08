@@ -7,7 +7,7 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc && tsc-alias",
     "clean": "rm -rf dist && rm -f tsconfig.tsbuildinfo",
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'tests/**/*.ts'",
     "prepublish": "npm run build",
@@ -33,6 +33,7 @@
     "jest-fetch-mock": "^3.0.3",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^9.0.0",

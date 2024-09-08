@@ -1,5 +1,9 @@
 {
   "include": ["src/**/*"],
+  "tsc-alias": {
+    "resolveFullPaths": true,
+    "verbose": false
+  },
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
